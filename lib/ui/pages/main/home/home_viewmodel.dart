@@ -134,7 +134,6 @@ class HomeViewModel extends BaseViewModel {
       recentNewsDS = DataStatus.ERROR;
     } finally {
       notifyListeners();
-      print(recentNews[0].title);
     }
   }
 

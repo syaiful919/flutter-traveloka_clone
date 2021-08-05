@@ -11,7 +11,6 @@ class PlaceProductDetailViewModel extends BaseViewModel {
 
   Future<void> firstLoad() async {
     PlaceProductDetailPageArguments arguments = _nav.arguments;
-    print(arguments.product);
     place = arguments.product;
     notifyListeners();
   }
