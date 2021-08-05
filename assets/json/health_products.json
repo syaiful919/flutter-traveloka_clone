@@ -1,0 +1,137 @@
+[
+  {
+    "type": "Tes COVID-19",
+    "data": [
+      {
+        "id": 1,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Bumame-Farmasi-1000x1000-jpg-720x720-FIT-99475f194ed938e50cad4f84bf6e3540.jpeg"
+        ],
+        "price": 120000,
+        "title": "Klinik Kimia Farma"
+      },
+      {
+        "id": 2,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Bumame-Farmasi-1000x1000-jpg-720x720-FIT-99475f194ed938e50cad4f84bf6e3540.jpeg"
+        ],
+        "price": 120000,
+        "title": "Klinik Kimia Farma"
+      },
+      {
+        "id": 3,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Bumame-Farmasi-1000x1000-jpg-720x720-FIT-99475f194ed938e50cad4f84bf6e3540.jpeg"
+        ],
+        "price": 120000,
+        "title": "Klinik Kimia Farma"
+      },
+      {
+        "id": 4,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Bumame-Farmasi-1000x1000-jpg-720x720-FIT-99475f194ed938e50cad4f84bf6e3540.jpeg"
+        ],
+        "price": 120000,
+        "title": "Klinik Kimia Farma"
+      },
+      {
+        "id": 5,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Bumame-Farmasi-1000x1000-jpg-720x720-FIT-99475f194ed938e50cad4f84bf6e3540.jpeg"
+        ],
+        "price": 120000,
+        "title": "Klinik Kimia Farma"
+      }
+    ]
+  },
+  {
+    "type": "Layanan Tes dari Rumah",
+    "data": [
+      {
+        "id": 1,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Laboratorium-Helix-1000x1000-jpg-720x720-FIT-6133a9924126b1754a6c83d8bab8f8af.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 95000,
+        "title": "Laboratorium Helix"
+      },
+      {
+        "id": 2,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Laboratorium-Helix-1000x1000-jpg-720x720-FIT-6133a9924126b1754a6c83d8bab8f8af.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 95000,
+        "title": "Laboratorium Helix"
+      },
+      {
+        "id": 3,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Laboratorium-Helix-1000x1000-jpg-720x720-FIT-6133a9924126b1754a6c83d8bab8f8af.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 95000,
+        "title": "Laboratorium Helix"
+      },
+      {
+        "id": 4,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Laboratorium-Helix-1000x1000-jpg-720x720-FIT-6133a9924126b1754a6c83d8bab8f8af.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 95000,
+        "title": "Laboratorium Helix"
+      },
+      {
+        "id": 5,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Laboratorium-Helix-1000x1000-jpg-720x720-FIT-6133a9924126b1754a6c83d8bab8f8af.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 95000,
+        "title": "Laboratorium Helix"
+      }
+    ]
+  },
+  {
+    "type": "Tes Post Covid",
+    "data": [
+      {
+        "id": 1,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Primecare-Clinic-1000x1000-jpg-720x720-FIT-c6efc23f473e5b1834487196d0f4aa51.jpeg"
+        ],
+        "price": 150000,
+        "title": "Primecare Clinic"
+      },
+      {
+        "id": 2,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Primecare-Clinic-1000x1000-jpg-720x720-FIT-c6efc23f473e5b1834487196d0f4aa51.jpeg"
+        ],
+        "price": 150000,
+        "title": "Primecare Clinic"
+      },
+      {
+        "id": 3,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Primecare-Clinic-1000x1000-jpg-720x720-FIT-c6efc23f473e5b1834487196d0f4aa51.jpeg"
+        ],
+        "price": 150000,
+        "title": "Primecare Clinic"
+      },
+      {
+        "id": 4,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Primecare-Clinic-1000x1000-jpg-720x720-FIT-c6efc23f473e5b1834487196d0f4aa51.jpeg"
+        ],
+        "price": 150000,
+        "title": "Primecare Clinic"
+      },
+      {
+        "id": 5,
+        "images": [
+            "https://ik.imagekit.io/tvlk/xpe-asset/dsIfD0QxFcgaDmB6sQchobk5CmBu9PzsWhwFXGFxJ179jzSxIGG5kZNhhHY-p7nw/xxt/experience/image/Primecare-Clinic-1000x1000-jpg-720x720-FIT-c6efc23f473e5b1834487196d0f4aa51.jpeg"
+        ],
+        "price": 150000,
+        "title": "Primecare Clinic"
+      }
+    ]
+  }
+]

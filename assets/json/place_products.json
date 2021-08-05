@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "images": [
+          "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001186750067/Dunia%2520Fantasi%2520%2528Dufan%2529%2520Ancol%2520Tickets%2520-%2520Easy%2520Access-947a421f-85f3-4105-b923-86ddfccb2c9f.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 235000,
+        "title": "Tiket Dunia Fantasi (Dufan) Ancol",
+        "region": "Ancol",
+        "original_price": 235000
+      },
+      {
+        "id": 2,
+        "images": [
+          "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001453539314/Jakarta%2520Aquarium%2520%2526%2520Safari%2520Tickets-a7f838d9-46ed-45e3-9063-8d2001595e78.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 135000,
+        "title": "Tiket Jakarta Aquarium & Safari",
+        "region": "Tanjung Duren",
+        "original_price": 150000
+      },
+      {
+        "id": 3,
+        "images": [
+          "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000334012402/Taman%2520Safari%2520Prigen%2520Tickets%2520-%2520Easy%2520Access-e96a89c1-6472-43c2-851c-7753758d3a8f.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 126000,
+        "title": "Tiket Taman Safari",
+        "region": "Tretes",
+        "original_price": 140000
+      },
+      {
+        "id": 4,
+        "images": [
+          "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001186750067/Dunia%2520Fantasi%2520%2528Dufan%2529%2520Ancol%2520Tickets%2520-%2520Easy%2520Access-947a421f-85f3-4105-b923-86ddfccb2c9f.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 235000,
+        "title": "Tiket Dunia Fantasi (Dufan) Ancol",
+        "region": "Ancol",
+        "original_price": 235000
+      },
+      {
+        "id": 2,
+        "images": [
+          "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001453539314/Jakarta%2520Aquarium%2520%2526%2520Safari%2520Tickets-a7f838d9-46ed-45e3-9063-8d2001595e78.jpeg?_src=imagekit&tr=dpr-3,c-at_max,h-344,q-60,w-193"
+        ],
+        "price": 135000,
+        "title": "Tiket Jakarta Aquarium & Safari",
+        "region": "Tanjung Duren",
+        "original_price": 150000
+      }
+]
