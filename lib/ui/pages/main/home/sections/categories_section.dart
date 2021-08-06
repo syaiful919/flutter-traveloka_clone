@@ -14,8 +14,8 @@ class CategoriesSection extends ViewModelWidget<HomeViewModel> {
       child: model.categoriesDS == DataStatus.LOADED
           ? GridView.builder(
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                mainAxisExtent: 80,
                 maxCrossAxisExtent: 75,
-                childAspectRatio: 3.75 / 4,
                 crossAxisSpacing: Gap.s,
                 mainAxisSpacing: Gap.s,
               ),
