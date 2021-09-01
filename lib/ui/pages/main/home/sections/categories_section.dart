@@ -5,13 +5,13 @@ import 'package:traveloka_clone/models/entities/category_model.dart';
 import 'package:traveloka_clone/ui/components/bases/shrink_column.dart';
 import 'package:traveloka_clone/ui/pages/main/home/home_viewmodel.dart';
 import 'package:traveloka_clone/utils/project_theme.dart';
-import 'package:traveloka_clone/utils/shared_value.dart';
+import 'package:traveloka_clone/models/core/data.dart';
 
 class CategoriesSection extends ViewModelWidget<HomeViewModel> {
   @override
   Widget build(BuildContext context, HomeViewModel model) {
     return SliverToBoxAdapter(
-      child: model.categoriesDS == DataStatus.LOADED
+      child: model.categories.status == DataStatus.LOADED
           ? GridView.builder(
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                 mainAxisExtent: 80,
@@ -22,10 +22,10 @@ class CategoriesSection extends ViewModelWidget<HomeViewModel> {
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemBuilder: (_, i) => _CategoryItem(
-                category: model.categories[i],
+                category: model.categories.data[i],
                 onPressed: (val) {},
               ),
-              itemCount: model.categories.length,
+              itemCount: model.categories.data.length,
               padding:
                   const EdgeInsets.fromLTRB(Gap.m, Gap.m, Gap.m, 2 * Gap.xl),
             )

@@ -7,13 +7,13 @@ import 'package:traveloka_clone/ui/pages/main/home/components/section_header.dar
 import 'package:traveloka_clone/ui/pages/main/home/home_viewmodel.dart';
 import 'package:traveloka_clone/utils/project_theme.dart';
 import 'package:traveloka_clone/extensions/extended_num.dart';
-import 'package:traveloka_clone/utils/shared_value.dart';
+import 'package:traveloka_clone/models/core/data.dart';
 
 class PopularPlacesSection extends ViewModelWidget<HomeViewModel> {
   @override
   Widget build(BuildContext context, HomeViewModel model) {
     return SliverToBoxAdapter(
-      child: model.popularPlacesDS == DataStatus.LOADED
+      child: model.popularPlaces.status == DataStatus.LOADED
           ? ShrinkColumn.start(
               children: [
                 SectionHeader(
@@ -26,9 +26,9 @@ class PopularPlacesSection extends ViewModelWidget<HomeViewModel> {
                   margin: EdgeInsets.only(bottom: 2 * Gap.xl),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: model.popularPlaces.length,
+                    itemCount: model.popularPlaces.data.length,
                     itemBuilder: (_, i) => _PlacesItem(
-                      product: model.popularPlaces[i],
+                      product: model.popularPlaces.data[i],
                       detailAction: (val) => model.goToPlaceDetailPage(val),
                       isFirst: i == 0,
                     ),

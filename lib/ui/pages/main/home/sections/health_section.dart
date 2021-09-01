@@ -9,7 +9,7 @@ import 'package:traveloka_clone/ui/pages/main/home/components/section_tab_header
 import 'package:traveloka_clone/ui/pages/main/home/home_viewmodel.dart';
 import 'package:traveloka_clone/utils/project_theme.dart';
 import 'package:traveloka_clone/extensions/extended_num.dart';
-import 'package:traveloka_clone/utils/shared_value.dart';
+import 'package:traveloka_clone/models/core/data.dart';
 
 class HealthSection extends HookViewModelWidget<HomeViewModel> {
   @override

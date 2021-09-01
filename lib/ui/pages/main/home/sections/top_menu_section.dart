@@ -7,13 +7,13 @@ import 'package:traveloka_clone/ui/pages/main/home/home_viewmodel.dart';
 import 'package:traveloka_clone/utils/project_theme.dart';
 import 'dart:math' as math;
 
-import 'package:traveloka_clone/utils/shared_value.dart';
+import 'package:traveloka_clone/models/core/data.dart';
 
 class TopMenuSection extends ViewModelWidget<HomeViewModel> {
   @override
   Widget build(BuildContext context, HomeViewModel model) {
     return SliverToBoxAdapter(
-      child: model.userProfileDS == DataStatus.LOADED
+      child: model.userProfile.status == DataStatus.LOADED
           ? Padding(
               padding: const EdgeInsets.all(Gap.m),
               child: ShrinkColumn(
@@ -21,13 +21,14 @@ class TopMenuSection extends ViewModelWidget<HomeViewModel> {
                   Row(
                     children: [
                       CircleAvatar(
-                        backgroundImage: NetworkImage(model.userProfile!.photo),
+                        backgroundImage:
+                            NetworkImage(model.userProfile.data!.photo),
                         backgroundColor: ProjectColor.greyDivider,
                       ),
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.only(left: Gap.s),
-                          child: Text(model.userProfile!.name,
+                          child: Text(model.userProfile.data!.name,
                               style: TypoStyle.mainBlack600),
                         ),
                       ),
@@ -51,7 +52,7 @@ class TopMenuSection extends ViewModelWidget<HomeViewModel> {
                     children: [
                       _MenuItem(
                         icon: Icons.money,
-                        title: '${model.userProfile!.points} points',
+                        title: '${model.userProfile.data!.points} points',
                         onPressed: () {},
                       ),
                       _MenuItem(

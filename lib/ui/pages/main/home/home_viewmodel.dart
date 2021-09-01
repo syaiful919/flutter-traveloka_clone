@@ -10,7 +10,7 @@ import 'package:traveloka_clone/repositories/product_repository.dart';
 import 'package:traveloka_clone/repositories/user_repository.dart';
 import 'package:traveloka_clone/services/navigation/app_router.dart';
 import 'package:traveloka_clone/services/navigation/navigation_service.dart';
-import 'package:traveloka_clone/utils/shared_value.dart';
+import 'package:traveloka_clone/models/core/data.dart';
 
 class HomeViewModel extends BaseViewModel {
   final _nav = locator<NavigationService>();
@@ -19,20 +19,17 @@ class HomeViewModel extends BaseViewModel {
   final _userRepo = locator<UserRepository>();
   final _articleRepo = locator<ArticleRepository>();
 
-  UserProfileModel? userProfile;
-  List<CategoryModel> categories = [];
-  List<PlaceProductModel> popularPlaces = [];
   List<HealthProductGroupModel> _healthProducts = [];
   List<String> healthTabs = [];
   String selectedTab = "";
   List<HealthProductModel> selectedHealthProducts = [];
-  List<ArticleModel> recentNews = [];
 
-  DataStatus userProfileDS = DataStatus.INITIAL;
-  DataStatus categoriesDS = DataStatus.INITIAL;
-  DataStatus popularPlacesDS = DataStatus.INITIAL;
+  Data<List<CategoryModel>> categories = Data([]);
+  Data<List<PlaceProductModel>> popularPlaces = Data([]);
+  Data<UserProfileModel?> userProfile = Data(null);
+  Data<List<ArticleModel>> recentNews = Data([]);
+
   DataStatus healthProductsDS = DataStatus.INITIAL;
-  DataStatus recentNewsDS = DataStatus.INITIAL;
 
   void firstLoad() async {
     runBusyFuture(getUserProfile());
@@ -44,13 +41,13 @@ class HomeViewModel extends BaseViewModel {
 
   Future<void> getUserProfile() async {
     try {
-      userProfileDS = DataStatus.LOADING;
+      userProfile.status = DataStatus.LOADING;
       notifyListeners();
 
-      userProfile = await _userRepo.getUserProfile();
-      userProfileDS = DataStatus.LOADED;
+      userProfile.data = await _userRepo.getUserProfile();
+      userProfile.status = DataStatus.LOADED;
     } catch (e) {
-      userProfileDS = DataStatus.ERROR;
+      userProfile.status = DataStatus.ERROR;
     } finally {
       notifyListeners();
     }
@@ -58,18 +55,18 @@ class HomeViewModel extends BaseViewModel {
 
   Future<void> getCategories() async {
     try {
-      categoriesDS = DataStatus.LOADING;
+      categories.status = DataStatus.LOADING;
       notifyListeners();
 
       List<CategoryModel> result = await _productRepo.getCategories();
       if (result.isNotEmpty) {
-        categories.addAll(result);
-        categoriesDS = DataStatus.LOADED;
+        categories.data.addAll(result);
+        categories.status = DataStatus.LOADED;
       } else {
-        categoriesDS = DataStatus.EMPTY;
+        categories.status = DataStatus.EMPTY;
       }
     } catch (e) {
-      categoriesDS = DataStatus.ERROR;
+      categories.status = DataStatus.ERROR;
     } finally {
       notifyListeners();
     }
@@ -101,18 +98,18 @@ class HomeViewModel extends BaseViewModel {
 
   Future<void> getPopularPlaces() async {
     try {
-      popularPlacesDS = DataStatus.LOADING;
+      popularPlaces.status = DataStatus.LOADING;
       notifyListeners();
 
       List<PlaceProductModel> result = await _productRepo.getPopularPlaces();
       if (result.isNotEmpty) {
-        popularPlaces.addAll(result);
-        popularPlacesDS = DataStatus.LOADED;
+        popularPlaces.data.addAll(result);
+        popularPlaces.status = DataStatus.LOADED;
       } else {
-        popularPlacesDS = DataStatus.EMPTY;
+        popularPlaces.status = DataStatus.EMPTY;
       }
     } catch (e) {
-      popularPlacesDS = DataStatus.ERROR;
+      popularPlaces.status = DataStatus.ERROR;
     } finally {
       notifyListeners();
     }
@@ -120,18 +117,18 @@ class HomeViewModel extends BaseViewModel {
 
   Future<void> getRecentNews() async {
     try {
-      recentNewsDS = DataStatus.LOADING;
+      recentNews.status = DataStatus.LOADING;
       notifyListeners();
 
       List<ArticleModel> result = await _articleRepo.getRecentNews();
       if (result.isNotEmpty) {
-        recentNews.addAll(result);
-        recentNewsDS = DataStatus.LOADED;
+        recentNews.data.addAll(result);
+        recentNews.status = DataStatus.LOADED;
       } else {
-        recentNewsDS = DataStatus.EMPTY;
+        recentNews.status = DataStatus.EMPTY;
       }
     } catch (e) {
-      recentNewsDS = DataStatus.ERROR;
+      recentNews.status = DataStatus.ERROR;
     } finally {
       notifyListeners();
     }

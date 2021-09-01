@@ -6,13 +6,13 @@ import 'package:traveloka_clone/ui/components/bases/shrink_column.dart';
 import 'package:traveloka_clone/ui/pages/main/home/components/section_header.dart';
 import 'package:traveloka_clone/ui/pages/main/home/home_viewmodel.dart';
 import 'package:traveloka_clone/utils/project_theme.dart';
-import 'package:traveloka_clone/utils/shared_value.dart';
+import 'package:traveloka_clone/models/core/data.dart';
 
 class RecentNewsSection extends ViewModelWidget<HomeViewModel> {
   @override
   Widget build(BuildContext context, HomeViewModel model) {
     return SliverToBoxAdapter(
-      child: model.recentNewsDS == DataStatus.LOADED
+      child: model.recentNews.status == DataStatus.LOADED
           ? ShrinkColumn.start(
               children: [
                 SectionHeader(
@@ -24,9 +24,9 @@ class RecentNewsSection extends ViewModelWidget<HomeViewModel> {
                   margin: EdgeInsets.only(bottom: 2 * Gap.xl),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: model.recentNews.length,
+                    itemCount: model.recentNews.data.length,
                     itemBuilder: (_, i) => _ArticleItem(
-                      article: model.recentNews[i],
+                      article: model.recentNews.data[i],
                       isFirst: i == 0,
                     ),
                   ),
